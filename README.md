@@ -1,5 +1,7 @@
 # React Multi Querybuilder
 
+This is a fork of React Two Way Querybuilder. 
+
 A simple react component that lets you build queries dynamically on UI. Doesn't depend on any 3-d party libraries.
 
 ![image](https://github.com/Saajan/react-multi-querybuilder/blob/master/blob/builder.jpg)
@@ -245,4 +247,4 @@ Visit [DEMO](https://lefortov.github.io/react-multi-querybuilder) storybook to t
 
 ##License
 
-React-two-way-quierybuidler is MIT licensed
+MIT licensed
