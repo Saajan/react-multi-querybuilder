@@ -80,7 +80,8 @@ class Condition extends React.Component {
           ? <button
             type="button"
             onClick={() => this.handleDelete(this.props.nodeName)}
-            className={this.styles.deleteBtn}>{this.props.buttonsText.delete}</button>
+            className={this.styles.deleteBtn}
+          >{this.props.buttonsText.delete}</button>
           : null}
         {this
           .state
@@ -96,17 +97,18 @@ class Condition extends React.Component {
                 nodeName={rule.nodeName}
                 data={this.props.data}
                 onChange={this.handleChildUpdate}
-                styles={this.props.config.styles} />);
-            } else {
-              return (<Condition
-                key={index}
-                config={this.props.config}
-                buttonsText={this.props.buttonsText}
-                fields={this.props.fields}
-                nodeName={rule.nodeName}
-                data={this.props.data}
-                onChange={this.handleChildUpdate} />);
+                styles={this.props.config.styles}
+              />);
             }
+            return (<Condition
+              key={index}
+              config={this.props.config}
+              buttonsText={this.props.buttonsText}
+              fields={this.props.fields}
+              nodeName={rule.nodeName}
+              data={this.props.data}
+              onChange={this.handleChildUpdate}
+            />);
           })}
       </div>
     );

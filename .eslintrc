@@ -17,5 +17,13 @@
     "func-names": 0,
     # propTypes can be object
     "react/forbid-prop-types": 0,
+    "max-len":0,
+    "no-param-reassign":0,
+    "no-restricted-syntax":0,
+    "consistent-return":0,
+    "no-prototype-builtins":0,
+    "no-cond-assign":0,
+    "no-loop-func":0,
+    "class-methods-use-this":0,
   },
 }

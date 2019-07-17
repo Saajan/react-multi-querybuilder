@@ -105,7 +105,7 @@ class Rule extends React.Component {
   generateRuleObject(field, node) {
     const rule = {};
     rule.input = field.input;
-    node = node ? node : this.treeHelper.getNodeByName(this.props.nodeName);
+    node = node || this.treeHelper.getNodeByName(this.props.nodeName);
     rule.input.value = node.value;
     if (!field.operators || typeof (field.operators) === 'string') {
       rule.operators = this.props.operators;
