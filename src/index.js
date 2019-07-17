@@ -1,3 +1,3 @@
-import TwoWayQuerybuilder from './TwoWayQuerybuilder';
+import ReactMultiQueryBuilder from './ReactMultiQueryBuilder';
 
-export default TwoWayQuerybuilder;
+export default ReactMultiQueryBuilder;

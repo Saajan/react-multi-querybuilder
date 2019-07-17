@@ -1,13 +1,13 @@
-# React Two Way Querybuilder
+# React Multi Querybuilder
 
 A simple react component that lets you build queries dynamically on UI. Doesn't depend on any 3-d party libraries.
 
-![image](https://github.com/Lefortov/react-two-way-querybuilder/blob/master/blob/builder.jpg)
+![image](https://github.com/Saajan/react-multi-querybuilder/blob/master/blob/builder.jpg)
 
 ## Installing
 
 ```bash
-npm i react-two-way-querybuilder --save
+npm i react-multi-querybuilder --save
 ```
 
 ## Using
@@ -18,7 +18,7 @@ Simple usage:
 
 ```
     import React, { Component } from 'react';
-    import TwoWayQuerybuilder from 'react-two-way-querybuilder';
+    import ReactMultiQueryBuilder from 'react-multi-querybuilder';
 
     const fields = [
       { name: 'firstName', operators: 'all', label: 'First Name', input: { type: 'text' } },
@@ -35,7 +35,7 @@ Simple usage:
 
         render() {
             return (
-                 <TwoWayQuerybuilder fields={fields} onChange={this.handleChange} />
+                 <ReactMultiQueryBuilder fields={fields} onChange={this.handleChange} />
             );
         }
     }
@@ -97,12 +97,12 @@ Simple usage:
 
 ## Samples
 
-Visit [DEMO](https://lefortov.github.io/react-two-way-querybuilder) storybook to take a look at basic usage cases: 
+Visit [DEMO](https://lefortov.github.io/react-multi-querybuilder) storybook to take a look at basic usage cases: 
 
 - **existing query**: 
   ```
     import React, { Component } from 'react';
-    import TwoWayQuerybuilder from 'react-two-way-querybuilder';;
+    import ReactMultiQueryBuilder from 'react-multi-querybuilder';;
 
     const fields = [
       { name: 'firstName', operators: 'all', label: 'First Name', input: { type: 'text' } },
@@ -123,7 +123,7 @@ Visit [DEMO](https://lefortov.github.io/react-two-way-querybuilder) storybook to
 
         render() {
             return (
-                 <TwoWayQuerybuilder config={config} fields={fields} onChange={this.handleChange} />
+                 <ReactMultiQueryBuilder config={config} fields={fields} onChange={this.handleChange} />
             );
         }
     }
@@ -134,7 +134,7 @@ Visit [DEMO](https://lefortov.github.io/react-two-way-querybuilder) storybook to
 - **changed input types**:
   ```
     import React, { Component } from 'react';
-    import TwoWayQuerybuilder from 'react-two-way-querybuilder';;
+    import ReactMultiQueryBuilder from 'react-multi-querybuilder';;
 
     const changedFields = [
       { name: 'firstName', operators: 'all', label: 'First Name', input: { type: 'text' } },
@@ -162,7 +162,7 @@ Visit [DEMO](https://lefortov.github.io/react-two-way-querybuilder) storybook to
 
         render() {
             return (
-                 <TwoWayQuerybuilder config={config} fields={changedFields} onChange={this.handleChange} />
+                 <ReactMultiQueryBuilder config={config} fields={changedFields} onChange={this.handleChange} />
             );
         }
     }
@@ -172,7 +172,7 @@ Visit [DEMO](https://lefortov.github.io/react-two-way-querybuilder) storybook to
 - **custom styles**
   ```
     import React, { Component } from 'react';
-    import TwoWayQuerybuilder from 'react-two-way-querybuilder';;
+    import ReactMultiQueryBuilder from 'react-multi-querybuilder';;
 
     const fields = [
       { name: 'firstName', operators: 'all', label: 'First Name', input: { type: 'text' } },
@@ -203,7 +203,7 @@ Visit [DEMO](https://lefortov.github.io/react-two-way-querybuilder) storybook to
 
         render() {
             return (
-                 <TwoWayQuerybuilder config={changedStyles} fields={fields} onChange={this.handleChange} />
+                 <ReactMultiQueryBuilder config={changedStyles} fields={fields} onChange={this.handleChange} />
             );
         }
     }
@@ -213,7 +213,7 @@ Visit [DEMO](https://lefortov.github.io/react-two-way-querybuilder) storybook to
 - **validation**
   ```
     import React, { Component } from 'react';
-    import TwoWayQuerybuilder from 'react-two-way-querybuilder';;
+    import ReactMultiQueryBuilder from 'react-multi-querybuilder';;
 
     const validationFields = [
       { name: 'firstName', operators: 'all', label: 'First Name', input: { 
@@ -235,7 +235,7 @@ Visit [DEMO](https://lefortov.github.io/react-two-way-querybuilder) storybook to
 
         render() {
             return (
-                 <TwoWayQuerybuilder fields={validationFields} onChange={this.handleChange} />
+                 <ReactMultiQueryBuilder fields={validationFields} onChange={this.handleChange} />
             );
         }
     }

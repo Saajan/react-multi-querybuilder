@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf, action } from '@kadira/storybook';
-import TwoWayQuerybuilder from '../../src/TwoWayQuerybuilder';
+import ReactMultiQueryBuilder from '../../src/ReactMultiQueryBuilder';
 import './index.css';
 
 const config = {
@@ -60,17 +60,17 @@ const changedStyles = {
 
 storiesOf('Query builder', module)
   .add('default view', () => (
-    <TwoWayQuerybuilder fields={defaultFields} onChange={action('data changed')} />
+    <ReactMultiQueryBuilder fields={defaultFields} onChange={action('data changed')} />
   ))
   .add('existing query', () => (
-    <TwoWayQuerybuilder config={config} fields={defaultFields} onChange={action('data changed')} />
+    <ReactMultiQueryBuilder config={config} fields={defaultFields} onChange={action('data changed')} />
   ))
   .add('changed input types', () => (
-    <TwoWayQuerybuilder fields={changedFields} onChange={action('data changed')} />
+    <ReactMultiQueryBuilder fields={changedFields} onChange={action('data changed')} />
   ))
   .add('custom styles', () => (
-    <TwoWayQuerybuilder config={changedStyles} fields={defaultFields} onChange={action('data changed')} />
+    <ReactMultiQueryBuilder config={changedStyles} fields={defaultFields} onChange={action('data changed')} />
   ))
   .add('validation', () => (
-    <TwoWayQuerybuilder fields={validationFields} onChange={action('data changed')} />
+    <ReactMultiQueryBuilder fields={validationFields} onChange={action('data changed')} />
   ));

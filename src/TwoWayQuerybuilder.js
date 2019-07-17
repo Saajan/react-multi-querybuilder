@@ -49,7 +49,7 @@ function fillDefaultButtonsText(buttonsText) {
   return defBtnText;
 }
 
-class TwoWayQuerybuilder extends React.Component {
+class ReactMultiQueryBuilder extends React.Component {
   constructor(props) {
     super(props);
     this.config = buildDefaultConfig(props.config);
@@ -90,15 +90,15 @@ class TwoWayQuerybuilder extends React.Component {
   }
 }
 
-TwoWayQuerybuilder.propTypes = {
+ReactMultiQueryBuilder.propTypes = {
   buttonsText: PropTypes.object,
   config: PropTypes.object,
   fields: PropTypes.array.isRequired,
   onChange: PropTypes.func,
 };
 
-TwoWayQuerybuilder.defaultProps = {
+ReactMultiQueryBuilder.defaultProps = {
   buttonsText: {},
 };
 
-export default TwoWayQuerybuilder;
+export default ReactMultiQueryBuilder;
