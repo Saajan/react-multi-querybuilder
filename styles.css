@@ -115,7 +115,6 @@
   font-family: Roboto, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-size: 1rem;
   font-weight: 400;
   line-height: 1.75rem;
   padding-left: 0;
@@ -139,16 +138,8 @@
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 0;
-  background: none;
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-image: url("data:image/svg+xml,<svg width="10px" height="5px"><polygon points="7 10 12 15 17 10"></polygon></svg>");
-  font-family: Roboto, sans-serif;
-  font-size: .936rem;
   cursor: pointer;
-  font-family: Roboto, sans-serif;
   font-size: 1rem;
-  font-weight: 400;
   letter-spacing: .04em;
 }
 
