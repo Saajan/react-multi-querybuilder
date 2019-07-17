@@ -140,6 +140,7 @@ class Rule extends React.Component {
             <option value={field.name} key={index}>{field.label}</option>
           )}
         </select>
+        {this.getInputTag(this.state.currField.input.type)}
         <select
           value={this.node.operator}
           className={this.styles.select}
@@ -149,7 +150,6 @@ class Rule extends React.Component {
             <option value={operator.operator} key={index}>{operator.label}</option>
           )}
         </select>
-        {this.getInputTag(this.state.currField.input.type)}
         <button
           type="button"
           className={this.styles.deleteBtn}
