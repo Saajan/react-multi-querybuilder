@@ -99,7 +99,7 @@ Simple usage:
 
 ## Samples
 
-Visit [DEMO](https://lefortov.github.io/react-multi-querybuilder) storybook to take a look at basic usage cases: 
+Visit [DEMO](https://saajan.github.io/react-multi-querybuilder) storybook to take a look at basic usage cases: 
 
 - **existing query**: 
   ```
